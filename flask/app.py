@@ -1,15 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask, redirect, render_template, request, url_for
 app = Flask(__name__)
 
-
-notes = []
-
-@app.route('/', methods=['GET'])
-def get_notes():
-    return render_template('main.html', notes=notes)
-
-@app.route('/', methods=['POST'])
-def submit_note():
-    text = request.form['text']
-    notes.append(text)
-    return render_template('main.html', notes=notes)
+# Add code here! 
+ 
+if __name__ == '__main__':
+    port = 5000
+    app.debug = True
+    app.run(host='0.0.0.0', port=port)

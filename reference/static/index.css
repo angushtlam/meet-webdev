@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  background-color: #222;
+  font-family: -apple-system, Helvetica, 'Calibri', Arial, sans-serif;
+}
+
+.content {
+  background-color: white;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px 50px;
+}
+
+input[type='text'] {
+  border: 1px solid black;
+  border-bottom: 0;
+  font-family: -apple-system, Helvetica, 'Calibri', Arial, sans-serif;
+  font-size: 24px;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: -apple-system, Helvetica, 'Calibri', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  height: 50px;
+  width: 100%; 
+}
+
+hr {
+  margin: 40px 0;
+}
