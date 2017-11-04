@@ -1,0 +1,17 @@
+<!doctype html>
+<title>Hello World</title>
+<body>
+    {% if notes %}
+        {% for n in notes %}
+            <h3>{{n}}</h3>
+        {% endfor %}
+    {% else %}
+        <h2> No notes to display </h2>
+    {% endif %}
+    
+    <h1>Submit Note To Save</h1>
+    <form action="." method="POST">
+        <input type="text" name="text">
+        <input type="submit" name="my-form" value="Send">
+    </form>
+</body>
